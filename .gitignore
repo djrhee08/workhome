@@ -1,5 +1,5 @@
-image/validation/*
-image/training/*
-mask/validation/*
-mask/training/*
+image/validation/*.npy
+image/training/*.npy
+mask/validation/*.npy
+mask/training/*.npy
 *.dat

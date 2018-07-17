@@ -1,0 +1,4 @@
+image/training/*npy
+image/validation/*npy
+mask/training/*npy
+mask/validation/*npy
