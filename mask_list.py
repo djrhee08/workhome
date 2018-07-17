@@ -1,8 +1,7 @@
 import numpy as np
 import os, glob
 
-dir_image = 'image'
-dir_mask = 'mask'
+dir_mask = 'mandible'
 dir_train = 'training'
 dir_valid = 'validation'
 

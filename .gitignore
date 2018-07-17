@@ -3,3 +3,4 @@ image/training/*.npy
 mask/validation/*.npy
 mask/training/*.npy
 *.dat
+*.npy
