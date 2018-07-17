@@ -1,0 +1,5 @@
+image/validation/*
+image/training/*
+mask/validation/*
+mask/training/*
+*.dat
