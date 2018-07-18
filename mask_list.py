@@ -1,18 +1,13 @@
 import numpy as np
 import os, glob
 
-dir_mask = 'mandible'
-dir_train = 'training'
-dir_valid = 'validation'
+mask_list = 'mask_slice_index.dat'
+image_list = 'image_slice_index.dat'
 
-valid_list = 'validation_list.dat'
-train_list = 'training_list.dat'
+npy_files = '*.npy'
 
-training = dir_mask + '/' + dir_train + '/*.npy'
-validation = dir_mask + '/' + dir_valid + '/*.npy'
-
-with open(train_list, 'w') as f:
-    for i in glob.glob(training):
+with open(mask_list, 'w') as f:
+    for i in glob.glob(npy_files):
         temp = i.replace('\\','/')
         temp = temp.split('/')[-1]
         f.write(temp+'\n')
