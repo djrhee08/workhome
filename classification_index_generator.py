@@ -8,7 +8,7 @@ if len(argv) == 1:
     print("Please set the mode, 'training' or 'validation'")
     sys.exit()
 
-percent_no_image = 0.8
+percent_no_image = 0.6
 
 mode = argv[1]
 print("mode : ", mode)
@@ -19,7 +19,7 @@ if len(argv) == 3:
         print("percent_no_image : ", percent_no_image, " is incorrect, it should be 0 <= x <= 1")
         sys.exit()
 
-mask_name = 'mandible'
+mask_name = 'Brain'
 mask_list = mask_name + '/' + mode + '/mask_slice_index.dat'
 image_list = 'image_total_index.dat'
 
@@ -84,7 +84,7 @@ for i, pID in enumerate(pID_list):
         for slice_num in range(image_min_max_list[index][0], (image_min_max_list[index][1] + 1)):
             if slice_num < min_max_list[i][0] or slice_num > min_max_list[i][1]:
                 label = 0
-                ind_list = ["image_" + pID + "_" + str(slice_num) + ".npy", label]
+                ind_list = ['image_' + pID + '_' + str(slice_num) + '.npy', label]
                 total_list.append(ind_list)
 
 
